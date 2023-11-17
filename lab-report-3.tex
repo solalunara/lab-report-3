@@ -1,17 +1,17 @@
 %! TeX program = xelatex
 \documentclass[12pt, a4paper]{article}
-\usepackage{geometry, tikz, float, pgfplots, xcolor, titlesec, amsmath, url, hanging}
-\usepackage{siunitx}
+\usepackage{geometry, tikz, float, pgfplots, xcolor, titlesec, amsmath, url, hanging, siunitx, graphicx, sectsty}
 \usepackage[utf8]{inputenc}
 \usepackage[skip=3pt]{parskip}
 \usepackage[none]{hyphenat}
 \usepackage[no-math]{fontspec}   % only changes normal font
-\usepackage{graphicx}
 % Tells LaTeX the images are kept in the "images" folder under the main directory
-\graphicspath{ {./images/} }
+\graphicspath{ {./assets/} }
 \pgfplotsset{compat=1.18, width=10cm}
 % Spacing of sections: 0pt on the left, 18pt above, and 12pt below
 \titlespacing\section{0pt}{18pt}{12pt}
+% font size 12 for the sections
+\sectionfont{\fontsize{12}{15}\selectfont}
 
 % Setting font
 \setromanfont{Arial}
@@ -30,24 +30,17 @@
 \thispagestyle{empty} % No page number for this page
 
 \Large{\textbf{Properties of Gamma Radiation}} \\[30pt]
-\normalsize Jack Greenberg\\[5pt]
-11017146\\[20pt]
+\normalsize \textit{Jack Greenberg, Jacob Fairham}\\[5pt]
+\textit{11017146, 11074241}\\[20pt]
 Department of Physics and Astronomy \\[5pt]
 The University of Manchester \\[20pt]
 First Year Laboratory Report 2 \\[20pt]
 January 2023 \\[25pt]
-This experiment was performed in collaboration with Megha Kedia,
-1135753. \\ [115pt]
 
 \end{center}
-
-\begin{center}
 
 \textbf{Abstract}\\[12pt]
-
-\end{center}
-
-In this experiment we attempted to calculate a value for the boltzmann constant by using a semiconductor, a resistor, and a voltage supply hooked up in a circuit. While a this is a theoretically sound method of calculating the boltzmann constant, there were sources of resistance that weren't accounted for, such as the resistance in the wires, which led to the value of the boltzmann constant likely being more accurate for higher resistances, and if this experiment is to be repeated we would suggest either including all forms of resistance or using a resistor above $10^6$\si{\ohm} for best results. We calculate the boltzmann constant to be $1.5745 \times 10^{-23}$ in SI units with an uncertainty of $\Delta k = 0.0141 \times 10^{-23}$.
+This expirement aimed to analyze the spectra created using gamma ray spectroscopy using thallium-activated sodium iodide scintillation detectors with radioactive isotopes such as $^{22}$Na, $^{60}$Co, and $^{137}$Cs. The peaks of the $^{22}$Na spectrum were then used to calculate the strength of the sodium source and the relative efficiencies of the detector at the different photopeak energies, and then different materials were used between the isotopes and the detector to confirm the decay relation. We found our isotope of $^{22}$Na had a source strength of $11.77\pm1.81$kBq, as compared to its theoretical $15.09$kBq obtained using the initial source strength as well as the half life of the isotope and the amount of time that has passed from the initial source measurement.
 
 \noindent 
 
@@ -161,13 +154,12 @@ In this experiment we attempted to calculate a value for the boltzmann constant 
 \section{Conclusion}
 	It is likely that we did not properly account for all sources of resistance in our calculations, such as resistance from the wires, because as the resistor becomes the dominant source of resistance making all other sources negligible our value for the boltzmann constant approaches the value measured in other experiments. Regardless, we were able to confirm the order of magnitude of the boltzmann constant, which allows us to describe, with moderate precision, the relationship between energy and temperature, which has uses that range from the kitchen to the architect's office. There are a couple of anomalous points but those are likely the result of a typo when taking the data as they only appear in figure 3. 
 
-\section{References}
+\section*{References}
+
 	\begin{hangparas}{.25in}{1}
 		[1] Ocaya, Richard. (2006). An experiment to profile the voltage, current and temperature behaviour of a P-N diode. European Journal of Physics. 27. 625. 10.1088/0143-0807/27/3/015.
 		
-		[2] Greenberg, Jack. \url{https://docs.google.com/spreadsheets/d/1VPyB45VnHLZMVPZvNDqX_nzwYz0jEKTM0Yy2oBJ7VuI/edit?usp=sharing}
-
-		[3] Daussy, C. et al. "Direct Determination of the Boltzmann Constant by an Optical Method". Phys. Rev. Lett. 98. (2007): 250801.
+		[2] Daussy, C. et al. "Direct Determination of the Boltzmann Constant by an Optical Method". Phys. Rev. Lett. 98. (2007): 250801.
 	\end{hangparas}
 
 \end{document}
