@@ -1,11 +1,11 @@
 # Fdb version 4
-["xdvipdfmx"] 1700224733 "lab-report-3.xdv" "lab-report-3.pdf" "lab-report-3" 1700224733 0
-  "lab-report-3.xdv" 1700224732 81324 f3ebd224b51b0a5844cd93ed06f1b6f2 "xelatex"
+["xdvipdfmx"] 1700235545 "lab-report-3.xdv" "lab-report-3.pdf" "lab-report-3" 1700235546 0
+  "lab-report-3.xdv" 1700235545 79068 60319b537502a5c149f60e32dac5aadf "xelatex"
   (generated)
   "lab-report-3.pdf"
   (rewritten before read)
-["xelatex"] 1700224731 "/home/fvp/Documents/uni/Lab/lab-report-3/lab-report-3.tex" "lab-report-3.xdv" "lab-report-3" 1700224733 0
-  "/home/fvp/Documents/uni/Lab/lab-report-3/lab-report-3.tex" 1700224731 11716 04ca6f3e31373d3bf2799ebeddc617c9 ""
+["xelatex"] 1700235543 "/home/fvp/Documents/uni/Lab/lab-report-3/lab-report-3.tex" "lab-report-3.xdv" "lab-report-3" 1700235546 0
+  "/home/fvp/Documents/uni/Lab/lab-report-3/lab-report-3.tex" 1700235543 11608 c3a1a9630ada91d6ff9341622418ac80 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1689853683 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1689853683 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1689853683 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -164,6 +164,7 @@
   "/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty" 1689853683 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty" 1689853683 325 f9f16d12354225b7dd52a3321f085955 ""
   "/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty" 1689853683 4904 ee78b44e85d6fccf08cd99370557481e ""
+  "/usr/share/texmf-dist/tex/latex/sectsty/sectsty.sty" 1689853683 22423 d476012cd03f82f9475ad54ba6cd3267 ""
   "/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty" 1689853683 311824 d75ce982df3ab7d90c3408d6dc7c3588 ""
   "/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty" 1689853683 48833 3b7b4cfab1a3d15596bfd3772a77ab65 ""
   "/usr/share/texmf-dist/tex/latex/tools/array.sty" 1689853683 12691 5b542990fe866f3d772f71346cf85b95 ""
@@ -180,8 +181,8 @@
   "assets/bcgraph_1c5o.png" 1675018321 31251 41cf6bfed96181474af417df5de2d9a8 ""
   "assets/bcgraph_1c6o.png" 1675018377 32348 1ebc8c2b3cfe3ffeba69a4f586ea7a2f ""
   "assets/circdiag.png" 1669895890 8723 305f5d571fcc3b5bb56d76dce031977a ""
-  "lab-report-3.aux" 1700224732 2248 78b65234dcc0bcf27f8cc71a1c5d4879 "xelatex"
-  "lab-report-3.tex" 1700224731 11716 04ca6f3e31373d3bf2799ebeddc617c9 ""
+  "lab-report-3.aux" 1700235545 2150 7f0ef119081a37d48b5ea00851417856 "xelatex"
+  "lab-report-3.tex" 1700235543 11608 c3a1a9630ada91d6ff9341622418ac80 ""
   (generated)
   "lab-report-3.aux"
   "lab-report-3.log"
