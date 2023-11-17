@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.17)  17 NOV 2023 16:01
+=======
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.11.17)  17 NOV 2023 15:39
+>>>>>>> 4e0a169f3c1966a49bfb76b9bcc45a67ecbc565a
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -451,7 +455,22 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \extratabsurround=\skip63
 \backup@length=\skip64
 \ar@cellbox=\box77
+<<<<<<< HEAD
 )) (c:/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
+=======
+)) (/usr/share/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+>>>>>>> 4e0a169f3c1966a49bfb76b9bcc45a67ecbc565a
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks47
 \inpenc@posthook=\toks48
@@ -590,13 +609,18 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 22.
- [1
+
+Underfull \hbox (badness 1127) in paragraph at lines 42--44
+\TU/Arial(0)/m/n/12 This expirement aimed to analyze the spectra created using gamma ray
+ []
+
+[1
 
 ]
 File: assets/circdiag.png Graphic file (type bmp)
 <assets/circdiag.png>
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 91--94
+Underfull \hbox (badness 10000) in paragraph at lines 84--87
 
  []
 
@@ -611,22 +635,22 @@ File: assets/bcgraph_0c6o.png Graphic file (type bmp)
 File: assets/bcgraph_1c4o.png Graphic file (type bmp)
 <assets/bcgraph_1c4o.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--142
+Underfull \hbox (badness 10000) in paragraph at lines 127--135
 []\TU/Arial(0)/m/n/12 for this graph: $[] \OT1/cmr/m/n/12 = 40\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 284 \OMS/cmsy/m/n/12 ^^F \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 983$\TU/Arial(0)/m/n/12 , and reduced $\OML/cmm/m/it/12 ^^_[] \OT1/cmr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 134--142
+Underfull \hbox (badness 7451) in paragraph at lines 127--135
 \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 01$\TU/Arial(0)/m/n/12 . Thus, $\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 4568 \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 10[]$ \TU/Arial(0)/m/n/12 and $\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0384 \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 10[]$\TU/Arial(0)/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--142
+Underfull \hbox (badness 10000) in paragraph at lines 127--135
 \TU/Arial(0)/m/n/12 Taking a weighted mean for the boltzmann constant for these
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--142
+Underfull \hbox (badness 10000) in paragraph at lines 127--135
 \TU/Arial(0)/m/n/12 graphs yields $\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6120 \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 10[]$ \TU/Arial(0)/m/n/12 and $\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0200 \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 10[]$\TU/Arial(0)/m/n/12 .
  []
 
@@ -636,20 +660,21 @@ File: assets/bcgraph_1c5o.png Graphic file (type bmp)
 File: assets/bcgraph_1c6o.png Graphic file (type bmp)
 <assets/bcgraph_1c6o.png>
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 153--157
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
 []\TU/Arial(0)/m/n/12 for this graph: $[] \OT1/cmr/m/n/12 = 30\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 482 \OMS/cmsy/m/n/12 ^^F \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 781$\TU/Arial(0)/m/n/12 , and reduced $\OML/cmm/m/it/12 ^^_[] \OT1/cmr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 153--157
+Underfull \hbox (badness 7451) in paragraph at lines 146--150
 \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 01$\TU/Arial(0)/m/n/12 . Thus, $\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 4091 \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 10[]$ \TU/Arial(0)/m/n/12 and $\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 k \OT1/cmr/m/n/12 = 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 0388 \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 10[]$\TU/Arial(0)/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--157
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
 
  []
 
+<<<<<<< HEAD
 [7]
 Underfull \hbox (badness 10000) in paragraph at lines 168--169
 []\TU/Arial(0)/m/n/12 [2] Greenberg, Jack. $[][][][][] [] [] [] [][][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][][] [] [] []
@@ -671,3 +696,16 @@ Here is how much of TeX's memory you used:
  102i,11n,107p,1239b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on lab-report-3.xdv (8 pages, 81312 bytes).
+=======
+[7] [8] (./lab-report-3.aux) ) 
+Here is how much of TeX's memory you used:
+ 30343 strings out of 478639
+ 823313 string characters out of 5848603
+ 1853018 words of memory out of 5000000
+ 50004 multiletter control sequences out of 15000+600000
+ 516076 words of font info for 64 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 100i,11n,104p,1242b,665s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on lab-report-3.xdv (8 pages, 79068 bytes).
+>>>>>>> 4e0a169f3c1966a49bfb76b9bcc45a67ecbc565a
