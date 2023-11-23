@@ -50,24 +50,32 @@ This expirement aimed to analyze the spectra created using gamma ray spectroscop
 	<insert introduction here>
 
 \section{Experimental Setup}
-	this is how you would include a graph!\\\\
-	\textbackslash begin\{figure\}[H] \textbackslash centering\\
-	\indent	\textbackslash includegraphics\{assets/circdiag.png\}\\
-	\indent	\textbackslash caption\{Circut diagram\}\\
-	\textbackslash end{figure}\\\\
-	you would put more text here, after the graph
+	<insert more stuff here>
 
-\section{Theory}
-	here's how you insert an equation!\\\\
-	\textbackslash begin\{equation\}\\
-	\indent <your equation here>\\
-	\textbackslash end\{equation\}
+\section{Interpreting the Spectra}
+	this is how you would include a graph!
+	\begin{figure}[H] \centering
+		\includegraphics[scale=0.3]{assets/na22_log_annotated.png}
+		\caption{Spectrum of Sodium 22 - Log scale counts by energy}
+	\end{figure}
+	\begin{figure}[H] \centering
+		\includegraphics[scale=0.3]{assets/co60_log_annotated.png}
+		\caption{Spectrum of Cobalt 60 - Log scale counts by energy}
+	\end{figure}
+	\begin{figure}[H] \centering
+		\includegraphics[scale=0.3]{assets/cs137_log_annotated.png}
+		\caption{Spectrum of Cesium 137 - Log scale counts by energy}
+	\end{figure}
 
-\section{Procedure}
-	more proceedure things
+\section{Source Strength Measurements}
+	\dots
 
-\section{Uncertainty Calculations}
-	you know the drill
+\section{Gamma Ray Absorption}
+	It can be shown through a simple differential calculation that
+	\begin{equation}
+		I = I_0 e^{\frac{x}{\tau}}
+	\end{equation}
+	where $\tau$ is a function of the energy/wavelength of the photon.
 
 \section{Data}
 	Raw data is availible electronically[2].
