@@ -68,7 +68,32 @@ This expirement aimed to analyze the spectra created using gamma ray spectroscop
 	\end{figure}
 
 \section{Source Strength Measurements}
-	\dots
+	The decay process for $^{22}$Na involves two $511\unit{\keV}$ photons and one $1275\unit{\keV}$ photon. The detector comprises some fraction of the solid angle $\Omega$. The probability of a detection of a $511\unit{\keV}$ and a $1275\unit{\keV}$ photon is
+	\begin{equation}
+		P(511\unit{\keV}) = 2\Omega\cdot\epsilon(E=511\unit{\keV})
+	\end{equation}
+	\begin{equation}
+		P(1275\unit{\keV}) = \Omega\cdot\epsilon(E=1275\unit{\keV})
+	\end{equation}
+	thus the probability of the combination sum peak is
+	\begin{equation}
+		P(1786\unit{\keV}) = P(511\unit{\keV})\cdot P(1275\unit{\keV}) = 2\Omega^2\cdot\epsilon(E=511\unit{\keV})\epsilon(E=1275\unit{\keV})
+	\end{equation}
+	the rate of detecton for each of the peaks ($R_E$) is a measurable value and is the source strength ($S$) times the probability of the peak. The following measurements were taken over $6600\unit{\s}$:
+	\begin{align}
+		R_{511} &= 202.56\pm.60\unit{\becquerel}\\
+		R_{1275} &= 45.35\pm.32\unit{\becquerel}\\
+		R_{1786} &= 0.78\pm.12\unit{\becquerel}
+	\end{align}
+	which allows the calculation of the ratio of the efficiencies of the detector at different energies
+	\begin{equation}
+		\frac{\epsilon(E=511\unit{\keV})}{\epsilon(E=1275\unit{\keV})} = \frac{R_{511}}{2R_{1275}} = 2.23\pm.02
+	\end{equation}
+	and the calculation of the source strength by
+	\begin{equation}
+		S = \frac{R_{511}\cdot R_{1275}}{R_{1786}} = 11.8\pm1.8\unit{\kilo\becquerel}
+	\end{equation}
+	where the errors on the measured values arise from subtracting background noise from the gross area in the spectrum and the errors on the calculated values arise from standard error propogation
 
 \section{Gamma Ray Absorption}
 	It can be shown through a simple differential calculation that
