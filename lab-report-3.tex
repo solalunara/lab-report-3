@@ -63,7 +63,7 @@ Figure 1 shows the relation between channel and energy to be
 \begin{equation}
 	(Energy/\unit{\keV}) = 1.25(Channel)+1.66
 \end{equation}
-which can then be inputted to the software 'Maestro' which automatically converts all channels to their corresponding energies
+which can then be input to the software 'Maestro' which automatically converts all channels to their corresponding energies
 
 \section{Interpreting the Spectra}
 The spectra obtained from measuring each source in the open air display four regions of importance. The tall, wide 'photopeaks' correspond to electrons detected through the photoelectric effect, matching the decay patterns of the isotopes. The wide spread before each photopeak represents regions of Compton background radiation, where a photon has hit an electron which is then scattered with energies dependant on the angle of scattering $\theta$
@@ -79,7 +79,7 @@ which has a maximum at $\theta$=$180^{\circ}$ which is where a drop in counts is
 		\includegraphics[scale=0.3]{assets/na22_log_annotated.png}
 		\caption{Spectrum of Sodium 22 - Log scale counts by energy}
 	\end{figure}
-The Sodium-22 spectrum also displays a 'sum peak' where the detector registers both products
+The Sodium-22 spectrum also displays a 'sum peak' where the detector registers both the $511\unit{Kev}$ and $1275\unit{Kev}$ photons as one since the delay between the deexcitation from the 1275 line and the positron annihilation reaction is unresolvably small
 	\begin{figure}[H] \centering
 		\includegraphics[scale=0.3]{assets/co60_log_annotated.png}
 		\caption{Spectrum of Cobalt 60 - Log scale counts by energy}
@@ -88,7 +88,7 @@ The Sodium-22 spectrum also displays a 'sum peak' where the detector registers b
 		\includegraphics[scale=0.3]{assets/cs137_log_annotated.png}
 		\caption{Spectrum of Cesium 137 - Log scale counts by energy}
 	\end{figure}
-
+In figure 4, a sharp, low energy peak is seen which corresponds to X-ray radiation originating from the orbital electrons of the source as opposed to the nucleic decay producing higher energy photons.
 \section{Source Strength Measurements}
 	The decay process for $^{22}$Na involves two $511\unit{\keV}$ photons and one $1275\unit{\keV}$ photon. The detector comprises some fraction of the solid angle $\Omega$. The probability of a detection of a $511\unit{\keV}$ and a $1275\unit{\keV}$ photon is
 	\begin{equation}
@@ -122,7 +122,7 @@ The Sodium-22 spectrum also displays a 'sum peak' where the detector registers b
 	\begin{equation}
 		I = I_0 e^{\frac{x}{\tau}}
 	\end{equation}
-	where $\tau$ is a function of the energy/wavelength of the photon. Therefore, by categorizing the data by photopeak energy and plotting the rate of detection by the thickness of the material for each separate material, we can calculate different values of $\tau$ and relate the absorption of the materials to each other.
+	where $\tau$ is a function of the energy/wavelength of the photon. Therefore, by categorizing the data by photopeak energy and plotting the rate of detection by the thickness of the material for each separate material, we can calculate different values of $\tau$ and relate the absorption of the materials to each other. The predominant cause of error was the time window that measurements were taken in. Ideally, since cobalt has a considerably lower count rate than the other sources, it would have been measured for an appropriately longer time.
 	\begin{figure}[H] \centering
 		\includegraphics[scale=0.4]{assets/NA511.png}
 		\includegraphics[scale=0.4]{assets/NA1275.png}
