@@ -14,7 +14,6 @@
 %   http://www.andy-roberts.net/writing/latex/floats_figures_captions
 %   http://www.andy-roberts.net/res/writing/latex/symbols.pdf
 %
-
 \documentclass[11pt]{article} %This sets the font size and the document class of your report. In this case we use 'article' as that is ideal for shorter reports. 
 
 % LaTeX can be enhanced by the use of packages. These packages can do many things, a few of the most common and useful are used here. They are declared before the document proper, in what is known as the 'preamble'. Packages need to be installed when a .tex file compiles into a .pdf, but should do so automatically.
@@ -80,7 +79,7 @@ November 2023~\\[2cm]
         \end{equation}
         which comes from (citation).
 
-        equation (1) show that the measured energy has a maximum at $\theta$=$180^{\circ}$ which is where a drop in counts is found known as the 'Compton edge'. Inversely, at the lower energy end of compton scattering the 'backscatter peak' can be found. This is where the scattered photons return to the detector instead of the electrons and then, through the photoelectric effect, cause a low energy electron to be detected.
+        equation (1) shows that the measured energy has a maximum at $\theta$=$180^{\circ}$ which is where a drop in counts is found known as the 'Compton edge'. Inversely, at the lower energy end of compton scattering the 'backscatter peak' can be found. This is where the scattered photons return to the detector instead of the electrons and then, through the photoelectric effect, cause a low energy electron to be detected.
 
     \subsection{Source Strength Measurements}
         The decay process for $^{22}$Na involves two $511\unit{\keV}$ photons and one $1275\unit{\keV}$ photon. The detector comprises some fraction of the solid angle $\Omega$. The probability of a detection of a $511\unit{\keV}$ and a $1275\unit{\keV}$ photon is
@@ -107,7 +106,7 @@ November 2023~\\[2cm]
     \subsection{Gamma Ray Absorption}
         It can be shown through a simple differential calculation that
         \begin{equation}
-            I = I_0 e^{\frac{x}{\tau}}
+            I = I_0 e^{\frac{-x}{\tau}}
         \end{equation}
         where $\tau$ is a function of the energy/wavelength of the photon. Therefore, by categorizing the data by photopeak energy and plotting the rate of detection by the thickness of the material for each separate material, we can calculate different values of $\tau$ and relate the absorption of the materials to each other.
 
@@ -137,6 +136,7 @@ November 2023~\\[2cm]
 
 \section{Results}
     \subsection{Decay Spectra}
+        Equation 1 predicts that we would see a compton edge and backscattering for each non-combination photopeak, which is exactly what we see.
         \begin{figure}[H] \centering \label{na22}
             \includegraphics[scale=0.3]{assets/na22_log_annotated.png}
             \caption{Spectrum of Sodium 22 - Log scale counts by energy}
@@ -151,7 +151,20 @@ November 2023~\\[2cm]
             \caption{Spectrum of Cesium 137 - Log scale counts by energy}
         \end{figure}
     \subsection{Source Strength Measurements}
+    Using equations (5) and (6), the source strength and efficiency ratio can be calculated from the measured data
+	\begin{align*}
+		R_{511} &= 202.56\pm.60\unit{\becquerel}\\
+		R_{1275} &= 45.35\pm.32\unit{\becquerel}\\
+		R_{1786} &= 0.78\pm.12\unit{\becquerel}
+	\end{align*}
+	\begin{equation}
+		\frac{\epsilon(E=511\unit{\keV})}{\epsilon(E=1275\unit{\keV})} = 2.23\pm.02
+	\end{equation}
+	\begin{equation}
+		S = 11.8\pm1.8\unit{\kilo\becquerel}
+	\end{equation}
     \subsection{Gamma Ray Absorption}
+        We can plot intensity as a function of the thickness of the material and we can expect the exponential curve to follow the relation described in equation 7. The following graphs represent the relation plotted for each photopeak, described by the element and the energy of the photopeak in $\unit{\keV}$ - for example, the first photopeak of Sodium 22 would be NA511. Each graph contains three curves, one for each material.
         \begin{figure}[H] \centering \label{exponentials}
             \includegraphics[scale=0.4]{assets/NA511.png}
             \includegraphics[scale=0.4]{assets/NA1275.png}
@@ -160,27 +173,25 @@ November 2023~\\[2cm]
             \includegraphics[scale=0.4]{assets/CS662.png}
             \caption{Counts per second measured for different thicknesses of different materials - each graph is of a different photopeak. Fit data shown below}
         \end{figure}
-        \begin{table} % Begins the table environment
+        \begin{table}[H] % Begins the table environment
             \begin{center}
-            \caption{Height of the meniscus for different magnetic fields.}
-            \label{tab:example}
-			\begin{tabular}{ ||c|c|c|c|c|c|| }
-				$\tau$ & NA511 & NA1275 & CS662 & CO1173 & CO1332\\ 
-				Aluminium & $0.027\pm0.002$ & $0.042\pm0.005$ & $0.022\pm0.003$ & $0.062\pm0.043$ & $0.068\pm0.047$\\
-				Iron & $0.015\pm0.007$ & $0.022\pm0.015$ & $0.013\pm0.002$ & $0.055\pm0.125$ & $0.031\pm0.039$\\
-				Lead & $0.014\pm0.002$ & $0.026\pm0.009$ & $0.008\pm0.001$ & $0.031\pm0.021$ & $0.018\pm0.006$\\
-				$\chi^2$ & & & & & \\ 
-				Aluminium & $13.66$ & $4.47$ & $0.39$ & $0.59$ & $3.03$\\
-				Iron & $0.14$ & $0.49$ & $0.50$ & $4.14$ & $0.65$\\
-				Lead & $3.24$ & $0.80$ & $0.24$ & $0.23$ & $2.34$\\
-			\end{tabular}
-            \smallskip % If you want to put any text under the table, e.g. more detailed column descriptions, leave a space, or else the text will start to the right of the table.
-                Table 1: Values of $\tau$ and $\chi^2$ for each photopeak broken down by material
-            \smallskip % inserts a small vertical space
+                \scriptsize{
+                \begin{tabular}{ ||c|c|c|c|c|c|| }
+                    $\tau$ & NA511 & NA1275 & CS662 & CO1173 & CO1332\\ 
+                    Aluminium & $0.027\pm0.002$ & $0.042\pm0.005$ & $0.022\pm0.003$ & $0.062\pm0.043$ & $0.068\pm0.047$\\
+                    Iron & $0.015\pm0.007$ & $0.022\pm0.015$ & $0.013\pm0.002$ & $0.055\pm0.125$ & $0.031\pm0.039$\\
+                    Lead & $0.014\pm0.002$ & $0.026\pm0.009$ & $0.008\pm0.001$ & $0.031\pm0.021$ & $0.018\pm0.006$\\
+                    $\chi^2$ & & & & & \\ 
+                    Aluminium & $13.66$ & $4.47$ & $0.39$ & $0.59$ & $3.03$\\
+                    Iron & $0.14$ & $0.49$ & $0.50$ & $4.14$ & $0.65$\\
+                    Lead & $3.24$ & $0.80$ & $0.24$ & $0.23$ & $2.34$\\
+                \end{tabular}}
+                \smallskip
+
+                Table 1: Values of $\tau$ and $\chi^2$ for each photopeak broken down by material.
             \end{center}
         \end{table}
-
-% For more information on using tables, figures and cross-references in LaTeX, consult Andy Roberts' website (links at top of this document).
+        It can be seen from the table that values for $\tau$ tend to be the highest for aluminium, followed by iron and then lead. Using equation (7), this implies that lead absorbs the most gamma rays per unit thickness and aluminium absorbs the least gamma rays per unit thickness with iron falling between the two. The $\chi^2$ values have an extremely large variation, which is most likely a systemic issue around having taken the data across multiple days and the exact values depending somewhat on where the boundary for the gaussian was drawn.
 
 
 \section{Conclusions}
@@ -188,37 +199,5 @@ November 2023~\\[2cm]
 
 \bibliography{report_template_library} % Specifies the bibliography file where our references are stored. If the library file and document are not in the same folder then the file path must also be included.
 
-{\color{blue} [This section does not contain any written text, just the references themselves.  LaTeX creates it
-automatically using a reference library file ({\tt report\_template\_library.bib} in this case), from which it picks entries which have
-been cited in the text using the \textbackslash cite\{label reference\} command. See the .bib file for information on how to enter references. You can use one of two reference styles: either author-date, where the citation in the text reads, e.g. (Morin 2008), 
-and the references are listed alphabetically by author, or numerical (“IEEE”) referencing, where the citation reads [1] and the references are in numerical order by first use in the text. Do not include the lab script as a reference.]\\
-
- [Once you progress to the later years of your degree, specifically your MPhys project, you may find that a dedicated reference manager such as Mendelay or EndNote is more helpful to manage the large number of references you will have. These programs can also generate .bib files automatically for your reports.]}\\
-
-{\color{blue}{\Large [Optional sections]}\\
-
- [There are a number of addition sections that can sometimes be required in a report. Typically these are not required, but can on occasion be helpful. Typically this will be acknowledgements or appendices. Material in appendices is by definition not essential to your report and there is hardly ever a good reason to include it. Remember that your marker has to read a lot of reports and will appreciate brevity!]\\
-
-{\Large [Additional information]}\\
-
- [Please note that this template is not meant to be a complete guide to writing a lab report.
-Basic rules are given on the Blackboard site for 1st-year lab (PHYS10180). The first-year mark sheet serves as a comprehensive summary of basic formatting rules. Marking criteria in second year give much higher weight to complete and accurate description of the experiment.]\\
-
-{\Large [A note on writing style]}\\
-
- [The style of a lab report should approach that of a scientific paper. This is characterised by clarity and conciseness without verbosity or repetition. The past tense should be used to describe what has been done, and the present tense should be used to describe ongoing situations such as theory. Tenses should not be mixed within a single section. Both the passive voice (e.g. measurements were made) and the active voice (e.g. we concluded) are suitable, but the report should focus on the science and not the individual, so use of personal pronouns such as `I' and  `we' should not become obtrusive. Conditional language should be avoided wherever possible.]\\
-
-{\Large [Writing values]}\\
-
-[Whenever a value is given it should always have units and associated uncertainty, rounded sensibly and with both the values an 
-uncertainties quoted to the same sensible level of precision. Units should be written in roman font, and italic font should be used for 
-symbols, e.g. \mbox{$m = 15.2 \pm 0.1$~kg}. Use a non-breaking space to make sure values and units do not spread across line 
-breaks.]\\
-% ~ is the non-breaking space. 
-% In this case the line-break wanted to go after the equals sign, which is suppressed by putting the equation in \mbox{}
-
- [Document produced by Aniela Rodak - November 2014\\
- Last edited by Paddy Leahy - October 2016; e-mail: j.p.leahy@manchester.ac.uk]
-}
 
 \end{document}
