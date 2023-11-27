@@ -10,6 +10,7 @@
 \pgfplotsset{compat=1.18, width=10cm}
 % Spacing of sections: 0pt on the left, 18pt above, and 12pt below
 \titlespacing\section{0pt}{18pt}{12pt}
+\linespread{1.2} 
 % font size 12 for the sections
 \sectionfont{\fontsize{12}{15}\selectfont}
 
@@ -102,11 +103,11 @@ In figure 4, a sharp, low energy peak is seen which corresponds to X-ray radiati
 		P(1786\unit{\keV}) = P(511\unit{\keV})\cdot P(1275\unit{\keV}) = 2\Omega^2\cdot\epsilon(E=511\unit{\keV})\epsilon(E=1275\unit{\keV})
 	\end{equation}
 	the rate of detecton for each of the peaks ($R_E$) is a measurable value and is the source strength ($S$) times the probability of the peak. The following measurements were taken over $6600\unit{\s}$:
-	\begin{align}
+	\begin{align*}
 		R_{511} &= 202.56\pm.60\unit{\becquerel}\\
 		R_{1275} &= 45.35\pm.32\unit{\becquerel}\\
 		R_{1786} &= 0.78\pm.12\unit{\becquerel}
-	\end{align}
+	\end{align*}
 	which allows the calculation of the ratio of the efficiencies of the detector at different energies
 	\begin{equation}
 		\frac{\epsilon(E=511\unit{\keV})}{\epsilon(E=1275\unit{\keV})} = \frac{R_{511}}{2R_{1275}} = 2.23\pm.02
@@ -147,8 +148,7 @@ In figure 4, a sharp, low energy peak is seen which corresponds to X-ray radiati
 		\end{center}
 	}
 
-\section{Data}
-	Raw data is availible electronically[2].
+	all raw data is availible electronically[2].
 
 \section{Analysis}
 	analysis
