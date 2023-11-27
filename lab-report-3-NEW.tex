@@ -57,7 +57,7 @@ November 2023~\\[2cm]
 
 \end{center}
 {\Large \textbf{Abstract}}~\\[0.3cm]
- This expirement aimed to analyze the spectra created using gamma ray spectroscopy using thallium-activated sodium iodide scintillation detectors with radioactive isotopes such as $^{22}$Na, $^{60}$Co, and $^{137}$Cs. The peaks of the $^{22}$Na spectrum were then used to calculate the strength of the sodium source and the relative efficiencies of the detector at the different photopeak energies. Finally, different materials were used between the isotopes and the detector to measure the relation between gamma ray detections and the thickness of the barrier between the source and the detector at different energy levels. We found our isotope of $^{22}$Na had a source strength of $11.77\pm1.81$kBq, as compared to its theoretical $15.09$kBq obtained using the initial source strength as well as the half life of the isotope and the amount of time that has passed from the initial source measurement.
+ This expirement aimed to analyze the spectra created using gamma ray spectroscopy using thallium-activated sodium iodide scintillation detectors with radioactive isotopes such as $^{22}$Na, $^{60}$Co, and $^{137}$Cs. The peaks of the $^{22}$Na spectrum were then used to calculate the strength of the sodium source and the relative efficiencies of the detector at the different photopeak energies. Finally, different materials were used between the isotopes and the detector to measure the relation between gamma ray detections and the thickness of the barrier between the source and the detector at different energy levels. We found our isotope of $^{22}$Na had a source strength of $11.77\pm1.81$kBq, as compared to its theoretical $15.09$kBq obtained using the initial source strength as well as the half life of the isotope and the amount of time that has passed from the initial source measurement. We also find that, of the materials aluminium, lead, and iron, lead absorbs the most gamma rays per unit thickness and aluminium absorbs the least.
 
 \end{titlepage}
 \pagenumbering{gobble} % This stops the title page being numbered
@@ -69,7 +69,7 @@ November 2023~\\[2cm]
 
 \section{Introduction} 
 \label{intro}
-    Gamma radiation was first discovered and studied in 1900 by Paul Villard (citation) however the first quantitative experiment was carried out by Rurtherford and Andrade in 1914; This was carried out through gamma-ray spectroscopy with a rock salt crystal and proved their wavelengths were shorter than the previously studied X-ray radiation (citation). In 1944, gamma-ray spectroscopy began in earnest with Curran and Baker’s development of the scintillation detector (citation) which, to this day, is still the most popular method for detection of gamma rays. This experiment uses the same detection equipment to explore the three ways gamma radiation interacts with matter: Einstein’s photoelectric effect, Compton scattering and pair production. Each of these interactions produces an electron which can then be analysed to find the original energy of the photon and then processed to create a spectrum of detected photon energies. Exploring properties of gamma radiation is important as it is a powerful tool in imagery and detection. These detection techniques have been utilised to identify the presence of different radioactive isotopes which can aid geological mapping, dating of materials and are also notably used medically with many applications including predominantly imaging of inside human bodies.
+    Gamma radiation was first discovered and studied in 1900 by Paul Villard \cite{GammaRadiation} however the first quantitative experiment was carried out by Rurtherford and Andrade in 1914; This was carried out through gamma-ray spectroscopy with a rock salt crystal and proved their wavelengths were shorter than the previously studied X-ray radiation (citation). In 1944, gamma-ray spectroscopy began in earnest with Curran and Baker’s development of the scintillation detector (citation) which, to this day, is still the most popular method for detection of gamma rays. This experiment uses the same detection equipment to explore the three ways gamma radiation interacts with matter: Einstein’s photoelectric effect, Compton scattering and pair production. Each of these interactions produces an electron which can then be analysed to find the original energy of the photon and then processed to create a spectrum of detected photon energies. Exploring properties of gamma radiation is important as it is a powerful tool in imagery and detection. These detection techniques have been utilised to identify the presence of different radioactive isotopes which can aid geological mapping, dating of materials and are also notably used medically with many applications including predominantly imaging of inside human bodies.
 
 \section{Theory}
     \subsection{Decay Spectra}
@@ -152,18 +152,19 @@ November 2023~\\[2cm]
         \end{figure}
         In figure 4, a sharp, low energy peak is seen which corresponds to X-ray radiation originating from the orbital electrons of the source as opposed to the nucleic decay producing higher energy photons.
     \subsection{Source Strength Measurements}
-    Using equations (5) and (6), the source strength and efficiency ratio can be calculated from the measured data
-	\begin{align*}
-		R_{511} &= 202.56\pm.60\unit{\becquerel}\\
-		R_{1275} &= 45.35\pm.32\unit{\becquerel}\\
-		R_{1786} &= 0.78\pm.12\unit{\becquerel}
-	\end{align*}
-	\begin{equation}
-		\frac{\epsilon(E=511\unit{\keV})}{\epsilon(E=1275\unit{\keV})} = 2.23\pm.02
-	\end{equation}
-	\begin{equation}
-		S = 11.8\pm1.8\unit{\kilo\becquerel}
-	\end{equation}
+        Using equations (5) and (6), the source strength and efficiency ratio can be calculated from the measured data
+        \begin{align*}
+            R_{511} &= 202.56\pm.60\unit{\becquerel}\\
+            R_{1275} &= 45.35\pm.32\unit{\becquerel}\\
+            R_{1786} &= 0.78\pm.12\unit{\becquerel}
+        \end{align*}
+        \begin{equation}
+            \frac{\epsilon(E=511\unit{\keV})}{\epsilon(E=1275\unit{\keV})} = 2.23\pm.02
+        \end{equation}
+        \begin{equation}
+            S = 11.8\pm1.8\unit{\kilo\becquerel}
+        \end{equation}
+        this stands somewhat in contrast to the theoretical value calculated from an initial measurement and the half life of Sodium $22$, which evaluates to $15.09\unit{\kilo\becquerel}$. One source of error not included here is the region chosen to fit the gaussian for the sum peak, which might have caused a deviaion in the value obtained for the rate of the sum peak.
     \subsection{Gamma Ray Absorption}
         We can plot intensity as a function of the thickness of the material and we can expect the exponential curve to follow the relation described in equation 7. The following graphs represent the relation plotted for each photopeak, described by the element and the energy of the photopeak in $\unit{\keV}$ - for example, the first photopeak of Sodium 22 would be NA511. Each graph contains three curves, one for each material.
         \begin{figure}[H] \centering \label{exponentials}
@@ -176,7 +177,6 @@ November 2023~\\[2cm]
         \end{figure}
         \begin{table}[H] % Begins the table environment
             \begin{center}
-                \scriptsize{
                 \begin{tabular}{ ||c|c|c|c|c|c|| }
                     $\tau$ & NA511 & NA1275 & CS662 & CO1173 & CO1332\\ 
                     Aluminium & $0.027\pm0.002$ & $0.042\pm0.005$ & $0.022\pm0.003$ & $0.062\pm0.043$ & $0.068\pm0.047$\\
@@ -186,7 +186,7 @@ November 2023~\\[2cm]
                     Aluminium & $13.66$ & $4.47$ & $0.39$ & $0.59$ & $3.03$\\
                     Iron & $0.14$ & $0.49$ & $0.50$ & $4.14$ & $0.65$\\
                     Lead & $3.24$ & $0.80$ & $0.24$ & $0.23$ & $2.34$\\
-                \end{tabular}}
+                \end{tabular}
                 \smallskip
 
                 Table 1: Values of $\tau$ and $\chi^2$ for each photopeak broken down by material.
